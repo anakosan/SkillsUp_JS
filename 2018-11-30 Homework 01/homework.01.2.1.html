@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+</head>
+
+<body>
+<script>
+  var totalCost = parseInt(prompt("Введите общую сумму потраченных денег: ", 0));
+  
+if ((totalCost > 0) && (totalCost <= 999)) {
+  var discount = 2;	
+} else if ((totalCost >= 1000) && (totalCost <= 2999)) {
+  var discount = 5;	
+} else if ((totalCost >= 3000) && (totalCost <= 9999)) {
+  var discount = 8;	
+} else if (totalCost >= 10000) {
+  var discount = 10;	
+}
+
+  var currentProductCost = parseInt(prompt("Введите сумму текущей покупки: ", 0));
+ 
+  
+	alert ("Финальная сумма Вашей покупки составляет " + ((currentProductCost)-(currentProductCost)*(discount)/100) + ". Благодарим за покупку!");
+
+
+// A2= A1 - A1 * P / 100.
+// 300 uah – 100%
+// X uah – 20%
+// Суммак по скидке = стоимость покупки * скидку / 100
+
+
+
+</script>
+ 
+
+</body>
+</html>

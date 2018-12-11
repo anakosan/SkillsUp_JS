@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+</head>
+
+<body>
+<script>
+  var totalCost = parseInt(prompt("Введите общую сумму потраченных денег: ", 0));
+  
+if ((totalCost > 0) && (totalCost <= 999)) {
+  var discount = 2;	
+} else if ((totalCost >= 1000) && (totalCost <= 2999)) {
+  var discount = 5;	
+} else if ((totalCost >= 3000) && (totalCost <= 9999)) {
+  var discount = 8;	
+} else if (totalCost >= 10000) {
+  var discount = 10;	
+}
+
+  
+  // переменной discount нужно присвоить значение в соответствии с таблицей
+ 
+
+if (totalCost < 0) {
+	alert ("Данные не корректны.")
+} else if (totalCost > 0) {
+	alert ("Сумма Вашей скидки составляет " +(discount)+"%. Благодарим за покупку!");
+}
+</script>
+
+
+</body>
+</html>

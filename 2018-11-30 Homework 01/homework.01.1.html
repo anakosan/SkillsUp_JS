@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8"> 
+</head>
+
+
+
+<body>
+    
+<script>
+  var userInput = parseInt(prompt("Пожалуйста, введите число: "));
+
+
+//Number.isInteger ("userInput");
+// Проверка на то, является ли целым (true/false). 
+
+
+//var result = parseInt("userInput" % 2); 
+
+
+if  (userInput % 2 === 0) {
+	alert("Число "+(userInput)+" - чётное.");
+
+} else if  (userInput % 2 > 0) {
+	alert("Число "+(userInput)+" - нечётное.");
+} else {
+ 	alert("Something went wrong... Please enter a number.");
+} 
+
+//else if (("userInput" % 2 > "1") && (Number.isInteger = true)) {
+//	alert("Число "+(userInput)+" - нечётное");
+//} else {
+//	alert("Something went wrong...");
+//} 
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+ 
+
+
+
+<!-- 
+
+
+
+
+Задания:
+1.	Создайте программу которая будет запрашивать у пользователя число, после этого сделать проверку является число чётным или нет (проверку можно осуществить используя оператор “Остаток от деления” (%)).
+В зависимости от результата вывести пользователю сообщение:
+“число X - чётное” или “число X - нечётное”
+где X это то число, которое было получено от пользователя. 
+
+
+
+	Вводная часть:
+1.	метод prompt(text, defaultValue).
+2.	метод alert(message).
+3.	целое число - обернуть метод prompt в методом parseInt. Пример parseInt(prompt(...)).
+4.	Справка по методам alert, prompt: https://itchief.ru/lessons/javascript/javascript-methods-alert-prompt-confirm
+
+
+
+
+
+-->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+</head>
+
+<body>
+<script>
+   
+var sizeIntl = prompt("Введите размер в международном формате: ", "");
+var sizeEuropean;
+
+if (sizeIntl === "xs" || sizeIntl === "XS" || sizeIntl === "Xs" || sizeIntl === "xS") {
+  var sizeEuropean = "32-36";
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");	
+} else if (sizeIntl === "s" || sizeIntl === "S" || sizeIntl === "с" || sizeIntl === "С") {
+  var sizeEuropean = "36-40";	
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+} else if (sizeIntl === "m" || sizeIntl === "M" || sizeIntl === "м" || sizeIntl === "М") {
+  var sizeEuropean = "40-44";	
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+} else if (sizeIntl === "l" || sizeIntl === "L" || sizeIntl === "л" || sizeIntl === "Л") {
+  var sizeEuropean = "44-48";	
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+} else if (sizeIntl === "xl" || sizeIntl === "XL" || sizeIntl === "Xl" || sizeIntl === "xL" || sizeIntl === "хл" || sizeIntl === "ХЛ" || sizeIntl === "Хл" || sizeIntl === "хЛ") {
+  var sizeEuropean = "48-52";	
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+} else if (sizeIntl === "xxl" || sizeIntl === "XXL" || sizeIntl === "XXl" || sizeIntl === "Xxl" || sizeIntl === "xXL" || sizeIntl === "XxL" || sizeIntl === "ххл" || sizeIntl === "ХХЛ" || sizeIntl === "ХХл" || sizeIntl === "Ххл" || sizeIntl === "хХл" || sizeIntl === "ХхЛ") {
+  var sizeEuropean = "52-56";	
+  alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+} else {
+	alert("Такого международного размера не существует. Попробуйте ввести одно из следующих значений: S, M, L, XL, XXL.") 
+}
+
+//alert ("Международному формату " + (sizeIntl) + " соответствует европейский размер " + (sizeEuropean) + ".");
+
+
+ 
+
+</script>
+ 
+
+</body>
+</html>
